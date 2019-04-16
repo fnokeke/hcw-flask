@@ -33,4 +33,4 @@ Run
 - Create a [virtualenv](https://virtualenv.pypa.io/en/latest/) (using python3)
 - `pip install -r requirements.txt`
 - `python manage.py runserver`
-- Go to [localhost:5500](localhost:5500)
+- Go to [localhost:5500](http://localhost:5500)
