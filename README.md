@@ -2,19 +2,12 @@ Overview
 ========
 Flask server for [tablet app](https://github.com/emtseng/hcw-hf) designed for home health aides in NYC.
 
-Configuration
-=============
+Project Config
+==============
 - Create a file `secret_keys.py` at the project root (such that you have `hcw-flask/secret_keys.py` not `hcw-flask/hcw-flask/secret_keys.py`)
 - Inside the file, define variable `SQLALCHEMY_DATABASE_URI` (e.g. `SQLALCHEMY_DATABASE_URI = "sqlite:///students.sqlite3"`)
 
-Run
-===
-- Create a [virtualenv](https://virtualenv.pypa.io/en/latest/) (using python3)
-- `pip install -r requirements.txt`
-- `python manage.py runserver`
-- Go to [localhost:5500]
-
-# Database
+# Database Config
 - Install Postgres on your machine, login and create a database for your project:
     - Installation: (mac: `brew install postgres`; Ubuntu: `sudo apt-get install postgresql postgresql-contrib`)
     - Login into shell using postgres admin user (mac:`psql` or `psql -U postgres`; Ubuntu: `sudo su - postgres`)
@@ -34,3 +27,10 @@ Run
     python manage.py db migrate
     python manage.py db upgrade
     ```
+
+Run
+===
+- Create a [virtualenv](https://virtualenv.pypa.io/en/latest/) (using python3)
+- `pip install -r requirements.txt`
+- `python manage.py runserver`
+- Go to [localhost:5500](localhost:5500)
