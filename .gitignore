@@ -1,3 +1,8 @@
 .env
 secret_keys.py
-.idea/
+.idea/*
+.vscode/*
+py3/*
+*.pyc
+old_migrations/
+migrations/
